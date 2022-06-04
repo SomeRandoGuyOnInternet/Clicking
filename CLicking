@@ -104,7 +104,7 @@ local selectedRebirth
    b:Toggle("Selected Rebirth",function(bool)
       getgenv().autoRebirth = bool
       print('Auto Rebirth is: ', bool);
-      if bool then
+      if bool and selectedRebirth then
          autoRelive(selectedRebirth);
        end
       end)
